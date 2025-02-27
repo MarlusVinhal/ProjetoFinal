@@ -204,7 +204,7 @@ footer {
     }
     
     nav ul {
-        flex-direction: column; /* Empilha os itens do menu */
+        flex-direction: row; /* manten os itens do menu em linha */
     }
 
     nav ul li {
