@@ -1,0 +1,254 @@
+/* Reset básico para remover margens, paddings e definir box-sizing para border-box */
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o padding padrão de todos os elementos */
+    box-sizing: border-box; /* Garante que largura e altura incluam bordas e preenchimentos */
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão da página */
+    scroll-behavior: smooth; /* Suaviza a rolagem da página */
+}
+
+/* Estilização do corpo */
+body {
+    background: #121212; /* Define um fundo escuro para a página */
+    color: #ffffff; /* Define a cor do texto como branco */
+    gap: 15px; /* Espaçamento entre elementos (não afeta diretamente todos os elementos) */
+}
+
+/* Cabeçalho fixo no topo */
+header {
+    background: rgba(0, 0, 0, 0.8); /* Fundo preto semi-transparente */
+    position: fixed; /* Fixa o cabeçalho no topo da página */
+    width: 100%; /* Ocupa toda a largura da tela */
+    text-align: center; /* Centraliza o conteúdo */
+    top: -8%; /* Inicialmente escondido acima da tela */
+    left: 0; /* Alinha à esquerda */
+    font-size: 1rem; /* Define o tamanho do texto */
+    transition: top 0.3s; /* Suaviza a aparição do cabeçalho */
+    padding: 0.3% 0px; /* Espaçamento interno */
+}
+
+/* Exibir cabeçalho ao passar o mouse */
+header:hover {
+    top: 0; /* Faz o cabeçalho aparecer ao passar o mouse */
+    font-size: 1rem; /* Mantém o tamanho da fonte */
+}
+
+/* Navegação centralizada */
+nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Usa flexbox para alinhar os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+nav ul li {
+    margin: 0 20px; /* Espaçamento entre os itens do menu */
+}
+
+/* Links de navegação estilizados */
+nav ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #00d4ff; /* Cor azul brilhante */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: 0.3s; /* Suaviza o efeito de hover */
+}
+
+nav ul li a:hover {
+    color: #ff0099; /* Muda a cor ao passar o mouse */
+}
+
+/* Seções da página */
+section {
+    padding: 80px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Seção inicial */
+#home {
+    display: flex; /* Usa flexbox para organizar os elementos */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    padding-top: 120px; /* Distância do topo */
+}
+
+/* Estilização da foto de perfil */
+.profile-pic {
+    width: 250px; /* Define a largura da imagem */
+    height: 250px; /* Define a altura da imagem */
+    border: 3px solid #00d4ff; /* Adiciona uma borda azul */
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo da imagem */
+}
+
+/* Botões estilizados */
+.btn {
+    display: inline-block; /* Permite personalizar largura e altura */
+    gap: 20px; /* Espaçamento interno entre elementos dentro do botão */
+    background: linear-gradient(45deg, #00d4ff, #ff0099); /* Fundo com gradiente */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Cor do texto */
+    border-radius: 25px; /* Arredonda as bordas */
+    margin-top: 20px; /* Espaçamento acima do botão */
+    transition: 0.3s; /* Suaviza o efeito de hover */
+}
+
+/* Ícones estilizados */
+.icones {
+    display: flex; /* Usa flexbox para organizar os ícones */
+    align-items: center; /* Alinha verticalmente os ícones */
+    background: rgba(205, 174, 174, 0.1); /* Fundo semi-transparente */
+    padding: 1%; /* Espaçamento interno */
+    text-align: center; /* Centraliza os ícones */
+    margin: 1% auto; /* Espaçamento e centralização */
+    border-radius: 0.7%; /* Bordas levemente arredondadas */
+    width: 40%; /* Define a largura */
+    justify-content: space-between; /* Distribui os ícones uniformemente */
+    color: white; /* Define a cor do texto */
+}
+
+/* Efeito de hover no botão */
+.btn:hover {
+    transform: scale(1.1); /* Aumenta o botão levemente ao passar o mouse */
+}
+
+/* Contêiner de habilidades */
+.skills-container {
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px; /* Espaçamento entre os itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem para novas linhas */
+    
+}
+/* Contêiner de habilidades */
+.skills-container-link {
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centraliza os itens */
+    gap: 20px; /* Espaçamento entre os itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem para novas linhas */
+    display: inline; /* disposição em linha  */
+    width: 20px; /* Largura fixa */
+    height: auto;/* Altura Auto */
+    vertical-align: center;/* Alinhamento vertical ao centro */
+    margin-right: 5px; /* Pequeno espaço entre ícone e texto */
+    
+}
+
+
+/* Estilização individual das habilidades */
+.skill {
+    background: #1e1e1e; /* Fundo escuro */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: 0.3s; /* Suaviza o efeito de hover */
+    color: white; /* cor da fonte */
+    text-decoration: none;  /* retira o sublinhado */
+    align-items: center; /* alinha itens centro*/
+    text-align: center; /* alinha texto centro */
+}
+
+
+
+.skill:hover {
+    background: #00d4ff; /* Muda o fundo ao passar o mouse */
+    color: #121212; /* Muda a cor do texto */
+}
+
+/* Contêiner de projetos */
+.projects-container {
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centraliza os projetos */
+    gap: 20px; /* Espaçamento entre os projetos */
+    flex-wrap: wrap; /* Permite que os projetos quebrem para novas linhas */
+}
+
+/* Cartões de projetos */
+.project-card {
+    width: 200px; /* Largura fixa */
+    height: 120px; /* Altura fixa */
+    background: linear-gradient(45deg, #ff0099, #00d4ff); /* Fundo com gradiente */
+    display: flex; /* Usa flexbox */
+    align-items: center; /* Alinha o conteúdo ao centro */
+    justify-content: center; /* Centraliza horizontalmente */
+    border-radius: 10px; /* Bordas arredondadas */
+    transition: 0.3s; /* Suaviza o efeito de hover */
+    text-decoration: none;/* Tira a decoração padrão sublinhado */
+    color: #ffffff;/* Cor da Fonte*/
+   
+}
+
+.project-card:hover {
+    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background: #000; /* Fundo preto */
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Seção de contatos */
+.contatos {
+    background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    padding: 3%; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    margin: 2% auto; /* Margem para centralização */
+    border-radius: 1%; /* Bordas levemente arredondadas */
+    width: 80%; /* Largura da seção */
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 0.8rem; /* Reduz o tamanho da fonte */
+        padding: 5px; /* Reduz o padding */
+    }
+    
+    nav ul {
+        flex-direction: column; /* Empilha os itens do menu */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Aumenta o espaçamento entre os itens */
+    }
+    
+    .profile-pic {
+        width: 180px; /* Reduz o tamanho da imagem */
+        height: 180px;
+    }
+    
+    .btn {
+        padding: 8px 15px; /* Reduz o tamanho do botão */
+        font-size: 0.9rem;
+    }
+    
+    .skills-container, .projects-container {
+        flex-direction: column; /* Organiza os elementos em coluna */
+        align-items: center; /* Centraliza os elementos */
+    }
+    
+    .project-card {
+        width: 90%; /* Ajusta a largura */
+        height: auto;
+        padding: 20px;
+    }
+    
+    .icones {
+        width: 80%; /* Ajusta a largura */
+    }
+    
+    .contatos {
+        width: 90%; /* Ajusta a largura */
+    }
+}
+
+/* Ajustes para telas maiores */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+    }
+    
+    .profile-pic {
+        width: 300px; /* Aumenta o tamanho da imagem */
+        height: 300px;
+    }
+}

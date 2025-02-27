@@ -1,0 +1,155 @@
+<!DOCTYPE html> <!-- Define que este documento segue a especificação do HTML5 -->
+<html lang="pt-br"> <!-- Define que o idioma da página é Português do Brasil -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Permite o uso de caracteres especiais como acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a exibição para dispositivos móveis -->
+    <title>Portfólio Profissional</title> <!-- Define o título que aparece na aba do navegador -->
+    
+    <!-- Importa a folha de estilos externa -->
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <!-- Importa a fonte Poppins do Google Fonts para uma melhor tipografia -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Importa o script JavaScript externo e adia sua execução até que a página seja carregada -->
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ======= CABEÇALHO ======= -->
+    <header>
+        <h1>Marlus Pereira Vinhal</h1> <!-- Nome em destaque no cabeçalho -->
+        
+        <!-- Menu de navegação para diferentes seções do site -->
+        <nav>
+            <ul>
+                <li><a href="#home">Sobre</a></li> <!-- Link para a seção Sobre -->
+                <li><a href="#skills">Habilidades</a></li> <!-- Link para a seção Habilidades -->
+                <li><a href="#projects">Projetos</a></li> <!-- Link para a seção Projetos -->
+                <li><a href="#curriculo">Currículo</a></li> <!-- Link para a seção Currículo -->
+                <li><a href="#contact">Contato</a></li> <!-- Link para a seção Contato -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ======= SEÇÃO SOBRE ======= -->
+    <section id="home">
+        <div class="container"> <!-- Container para organização do conteúdo -->
+            <img src="assets/profile.jpeg" alt="Foto de Perfil" class="profile-pic"> <!-- Imagem de perfil -->
+            <h2>Marlus Pereira Vinhal</h2> <!-- Nome novamente destacado -->
+            <p>43 anos | Bacharelado em Sistemas de Informação - FACOM | 3°Período</p> <!-- Informações sobre a formação acadêmica -->
+            <br>
+            <p>Busco uma oportunidade na área de Tecnologia da Informação visando aplicar e expandir meus conhecimentos em programação.</p>
+            <p>Desde criança, sempre fui movido pela curiosidade. Desmontava brinquedos eletrônicos para entender como funcionavam. Hoje, faço o mesmo, só que com códigos, explorando cada linha como se fosse um circuito invisível!</p>
+        </div>
+    </section>
+
+    <!-- ======= SEÇÃO HABILIDADES ======= -->
+    <section id="skills">
+        <h2>Habilidades</h2>
+        
+            <!-- Lista de habilidades com eventos de clique para mostrar certificados -->
+            <div class="skills-container">
+                <div class="skill" onclick="mostrarCertificado('git')">Versionamento</div>
+                <div class="skill" onclick="mostrarCertificado('logica')">Html/Css/Javascript</div>
+                <div class="skill" onclick="mostrarCertificado('ia')">Data Science</div>
+                <div class="skill" onclick="mostrarCertificado('ia4')">Inteligência Artificial</div>
+            </div>
+
+            <!-- Área onde os certificados serão exibidos ao clicar em uma habilidade -->
+            
+            <!-- Div principal que contém todos os certificados -->
+            <div id="conteudo-certificados">
+
+                <!-- Certificado relacionado ao uso de Git e GitHub -->
+                <div id="certificado-git" class="certificado" style="display:none">
+                    <!-- Link para baixar o certificado de Git e GitHub -->
+                    <a class="btn" target="_blank" href="assets/2ALURA GIT E GITHUB COMPARTILHANDO E COLABORANDO.pdf" download>Git GitHub</a>
+                </div>
+
+                <!-- Certificados relacionados a lógica de programação, HTML, CSS e JavaScript -->
+                <div id="certificado-logica" class="certificado" style="display:none">
+                    <!-- Link para o certificado de Responsividade com HTML e CSS -->
+                    <a class="btn" target="_blank" href="assets/10HTML E CSS RESPONSIVIDADE.pdf" download>Responsividade CSS/HTML</a>
+                    <!-- Link para o certificado de Flexbox no CSS -->
+                    <a class="btn" target="_blank" href="assets/3ALURA HTML E CSS FLEXBOX.pdf" download>Flexbox CSS/HTML</a>
+                    <!-- Link para o certificado de lógica de programação com JavaScript -->
+                    <a class="btn" target="_blank" href="assets/4ALURA LOGICA DE PROGRAMACA FUNCOES E LISTAS.pdf" download>JavaScript - Funções e Listas</a>
+                    <!-- Link para o certificado de lógica de programação em JavaScript -->
+                    <a class="btn" target="_blank" href="assets/5aluraLogicade Programacao.pdf" download>JavaScript - Lógica de Programação</a>
+                    <!-- Link para o certificado sobre estrutura de arquivos e tags em HTML e CSS -->
+                    <a class="btn" target="_blank" href="assets/8HTML E CSS ESTRUTURA DE ARQUIVOS E TAGS.pdf" download>Estrutura e Tags CSS/HTML</a>
+                    <!-- Link para o certificado sobre uso de Footer e Variáveis em CSS -->
+                    <a class="btn" target="_blank" href="assets/9HTML E CSS FOOTER E VARIAVEIS.pdf" download>Footer e Variáveis CSS/HTML</a>
+                </div>
+
+                <!-- Certificados relacionados à área de Data Science -->
+                <div id="certificado-ia" class="certificado" style="display:none">
+                    <!-- Link para o certificado sobre Fundamentos de Dados -->
+                    <a class="btn" target="_blank" href="assets/6Coursera Fundamentos de dados.pdf" download>Fundamentos dos Dados</a>
+                    <!-- Link para o certificado sobre Preparação de Dados -->
+                    <a class="btn" target="_blank" href="assets/7Coursera Preparacao de dados.pdf" download>Preparação dos Dados</a>
+                    <!-- Link para o certificado sobre tomada de decisões baseada em dados -->
+                    <a class="btn" target="_blank" href="assets/tomar decisoes com base em dados.pdf" download>Tomar Decisões com Base em Dados</a>
+                </div>
+
+                <!-- Certificados relacionados à Inteligência Artificial -->
+                <div id="certificado-ia4" class="certificado" style="display:none;">
+                    <!-- Link para o certificado sobre ChatGPT e Inteligência Artificial -->
+                    <a class="btn" target="_blank" href="assets/1ALURA CHATGPT1.pdf" download>ChatGPT</a>
+                    <!-- Link para o certificado sobre aplicação de IA na Heineken -->
+                    <a class="btn" target="_blank" href="assets/IA Heineken.pdf" download>IA Heineken</a>
+                    <!-- Link para o certificado AI-900 (Introdução à IA no Microsoft Azure) -->
+                    <a class="btn" target="_blank" href="assets/AI 900.pdf" download>AI-900 Introdução</a>
+                    <!-- Link para o certificado sobre Fundamentos da Inteligência Artificial -->
+                    <a class="btn" target="_blank" href="assets/Fundamento IA.pdf" download>Fundamentos IA</a>
+                </div>
+            </div>
+
+            
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projects">
+            <h2>Projetos</h2>
+                <div class="skills-container">
+                  <a class="skill" target="_blank" href="assets/Python Automacao/Python Automacao.rar" >Projeto de Automação <br>Clique Aqui</a>
+                  <a class="skill" target="_blank" href="assets/Python Insights/Python Insights.rar">Projeto de Análise de Dados<br>Clique Aqui</a>
+                  <a class="skill" target="_blank" href="assets/Python IA/Python IA.rar">Projeto de Inteligencia Artificial<br>Clique Aqui</a>
+                  <a class="skill" target="_blank" href="assets/Python Dev/Python Dev.rar">Projeto de Criação Site/App<br>Clique Aqui</a>
+                </div>
+            
+        </section>
+       
+       
+
+            <!-- Seção Currículo -->
+            <section id="curriculo">
+                <h2>Currículo</h2>
+                    <div class="skills">
+                    <a class="btn" target="_blank" href="assets/curriculo definitivo.pdf" download>Acesse meu currículo atualizado</a>
+                    </div>
+            </section>
+
+            <!-- Seção Contato -->
+            <section id="contact">
+                            <h2>Contato</h2>
+                    <div class="contatos">
+                                <p>Email: marlus.vinhal@ufu.br</p>
+                                <p>Redes Sociais:</p>
+                                <div class="skills-container">
+                                    <a class="skill" href="https://github.com/MarlusVinhal"><img src="./assets/github.png" alt="icone GitHub"><br>GitHub</a>
+                                    <a class="skill" href="https://linkedin.com/in/marlusvinhal/"><img src="./assets/linkedin.png" alt="icone Linkedin"><br>LinkedIn</a>
+                                    <a class="skill" href="https://www.twitch.tv/marlusp"> <img src="./assets/twitch.png" alt="icone Twitch" ><br>Twitch</a>
+                                </div>
+                    </div>
+            </section>
+
+    <!-- Rodapé -->
+        <footer>
+            <p>&copy; 2025 Marlus Pereira Vinhal - Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>
