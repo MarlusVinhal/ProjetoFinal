@@ -201,10 +201,11 @@ footer {
     header {
         font-size: 0.5rem; /* Reduz o tamanho da fonte */
         padding: 2px; /* Reduz o padding */
+        top: -8%; /* diminuindo o recuo acima da tela */
     }
     
     nav ul {
-        flex-direction: row; /* manten os itens do menu em linha */
+        flex-direction: column; /* manten os itens do menu em linha */
     }
 
     nav ul li {
