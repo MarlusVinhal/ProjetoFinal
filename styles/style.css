@@ -20,7 +20,7 @@ header {
     position: fixed; /* Fixa o cabeçalho no topo da página */
     width: 100%; /* Ocupa toda a largura da tela */
     text-align: center; /* Centraliza o conteúdo */
-    top: -8%; /* Inicialmente escondido acima da tela */
+    top: -12%; /* Inicialmente escondido acima da tela */
     left: 0; /* Alinha à esquerda */
     font-size: 1rem; /* Define o tamanho do texto */
     transition: top 0.3s; /* Suaviza a aparição do cabeçalho */
