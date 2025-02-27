@@ -199,8 +199,8 @@ footer {
 /* Responsividade para telas menores */
 @media screen and (max-width: 768px) {
     header {
-        font-size: 0.8rem; /* Reduz o tamanho da fonte */
-        padding: 5px; /* Reduz o padding */
+        font-size: 0.5rem; /* Reduz o tamanho da fonte */
+        padding: 2px; /* Reduz o padding */
     }
     
     nav ul {
