@@ -31,6 +31,7 @@ header {
 header:hover {
     top: 0; /* Faz o cabeçalho aparecer ao passar o mouse */
     font-size: 1rem; /* Mantém o tamanho da fonte */
+    
 }
 
 /* Navegação centralizada */
@@ -60,7 +61,14 @@ nav ul li a:hover {
 section {
     padding: 80px 20px; /* Espaçamento interno */
     text-align: center; /* Centraliza o conteúdo */
+  
 }
+.paragrafo{
+    padding: 80px 20px; /* Espaçamento interno */
+    text-align: justify; /* Centraliza o conteúdo */
+    text-indent: 40px;
+}
+
 
 /* Seção inicial */
 #home {
@@ -198,15 +206,6 @@ footer {
 
 /* Responsividade para telas menores */
 @media screen and (max-width: 768px) {
-    header {
-        font-size: 0.5rem; /* Reduz o tamanho da fonte */
-        padding: 2px; /* Reduz o padding */
-        top: -8%; /* diminuindo o recuo acima da tela */
-    }
-    
-    nav ul {
-        flex-direction: column; /* manten os itens do menu em linha */
-    }
 
     nav ul li {
         margin: 10px 0; /* Aumenta o espaçamento entre os itens */
@@ -215,6 +214,7 @@ footer {
     .profile-pic {
         width: 180px; /* Reduz o tamanho da imagem */
         height: 180px;
+       
     }
     
     .btn {
@@ -237,6 +237,7 @@ footer {
         width: 80%; /* Ajusta a largura */
     }
     
+  
     .contatos {
         width: 90%; /* Ajusta a largura */
     }
